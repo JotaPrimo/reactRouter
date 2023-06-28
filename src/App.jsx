@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 // pages
 import About from "./pages/About";
 import Home from "./pages/Home"
+import Product from "./pages/Product";
 
 function App() { 
 
@@ -22,6 +23,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home /> } />
           <Route path="/about" element={<About /> } />
+
+          {/** rota dinamica, com parametro */}
+          <Route path="/products/:idProduto" element={ <Product /> } />
         </Routes>
       </BrowserRouter>
     </div>
